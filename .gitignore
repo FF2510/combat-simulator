@@ -1,0 +1,65 @@
+############################################
+# IDE-specific files and folders
+############################################
+
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+############################################
+# Build artifacts and generated files
+############################################
+
+/x64/
+/combat-simulator/
+/build/
+/bin/
+/Debug/
+/Release/
+
+# CMake generated files (if using CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+cmake-build-*/
+
+############################################
+# Compilation artifacts (common C/C++ files)
+############################################
+
+*.obj
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.lib
+
+# Additional temporary files
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.ipch/
+
+############################################
+# OS-specific files
+############################################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+############################################
+# Log files
+############################################
+
+*.log
