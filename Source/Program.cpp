@@ -5,6 +5,7 @@
 #include "Entity/Base/Entity.h"
 #include "UI/Creator/Creator.h"
 #include "UI/Log/Logger.h"
+#include "Entity/Combatant.h"
 
 int main()
 {
@@ -32,6 +33,12 @@ int main()
         // Check if the two created combatants are identical.
         if (Entity::AreMatchingEntities(*combatant_a, *combatant_b))
         {
+
+            Logger::PrintCombatantStats(*combatant_a, true, true);
+            Logger::PrintCombatantStats(*combatant_b, true, true);
+
+            std::cin.get();
+            
             // Inform the user that two matching combatants were created and prompt to retry.
             for (int i = 3; i > 0; i--)
             {

@@ -59,7 +59,7 @@ void Loop::Start(Combatant& combatantA, Combatant& combatantB)
     std::cout << "And the Winner is " 
               << Logger::AnsiString(turnCombatant->Name, TEXTSTYLE_BLINK, TEXTCOLOR_YELLOW) 
               << "! \n\nPress '" 
-              << Logger::AnsiString("ENTER", TEXTSTYLE_BLINK, TEXTCOLOR_YELLOW)
+              << Logger::AnsiString("ENTER", TEXTSTYLE_BLINK, TEXTCOLOR_CYAN)
               << "' to close the application ...";
     std::cin.get();
 }

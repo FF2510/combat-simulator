@@ -10,6 +10,9 @@ class Combatant;
  */
 class Loop final
 {
+    
+public:
+    
     // Starts the game loop for a battle between two combatants.
     void Start(Combatant& combatantA, Combatant& combatantB);
 };

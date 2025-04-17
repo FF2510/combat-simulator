@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include "../Data/Stats.h"
 
-Entity::Entity(const std::string& name, Stats* stats)
+Entity::Entity(const std::string& name, Stats* stats) : Name(name)
 {
     if (stats != nullptr)
     {
