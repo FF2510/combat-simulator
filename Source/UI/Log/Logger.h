@@ -1,5 +1,6 @@
 ﻿#pragma once
-
+#include <string>
+class Combatant;
 
 #pragma region LOGGER_MACROS
 
@@ -42,8 +43,25 @@
 #pragma endregion
 
 
-
+/**
+ * @brief Provides logging and display utilities for the combat simulator.
+ *
+ * The Logger class includes functions to format strings using ANSI escape codes,
+ * print combatant statistics, and log combat rounds and combat actions.
+ */
 class Logger final
 {
-    
+public:
+
+    // Formats a string using ANSI escape codes.
+    static std::string AnsiString(std::string str, std::string styleFormat = "", std::string colorFormat = "", std::string backgroundColorFormat = "");
+
+    // Prints the stats of a combatant.
+    static void PrintCombatantStats(const Combatant& combatant, bool bDisplayName, bool bInLine);
+
+    // Logs information about a combat round to the console.
+    static void LogCombatRoundInfo(Combatant& combatantA, Combatant& combatantB, unsigned short round, bool bClear = true);
+
+    // Logs a combat action to the console.
+    static void LogCombatAction(Combatant& agressor, Combatant& target, bool bClear = true);
 };
