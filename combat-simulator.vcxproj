@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Input\Input.cpp" />
+    <ClCompile Include="Source\Core\Loop\Loop.cpp" />
     <ClCompile Include="Source\Entity\Base\Entity.cpp" />
     <ClCompile Include="Source\Entity\Combatant.cpp" />
     <ClCompile Include="Source\Program.cpp" />
@@ -33,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\Input\Input.h" />
+    <ClInclude Include="Source\Core\Loop\Loop.h" />
     <ClInclude Include="Source\Entity\Base\Entity.h" />
     <ClInclude Include="Source\Entity\Base\Interface\ICombat.h" />
     <ClInclude Include="Source\Entity\Combatant.h" />
