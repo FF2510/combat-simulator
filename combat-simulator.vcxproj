@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Core\Input\Input.cpp" />
     <ClCompile Include="Source\Entity\Base\Entity.cpp" />
     <ClCompile Include="Source\Entity\Combatant.cpp" />
     <ClCompile Include="Source\Program.cpp" />
@@ -31,6 +32,7 @@
     <Content Include="Source\UI\UI.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Core\Input\Input.h" />
     <ClInclude Include="Source\Entity\Base\Entity.h" />
     <ClInclude Include="Source\Entity\Base\Interface\ICombat.h" />
     <ClInclude Include="Source\Entity\Combatant.h" />
