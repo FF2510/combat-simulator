@@ -59,6 +59,9 @@ public:
     // Prints the stats of a combatant.
     static void PrintCombatantStats(const Combatant& combatant, bool bDisplayName, bool bInLine);
 
+    // Prints combatant stats using provided values. Specialization for printing without combatant instance.
+    static void PrintCombatantStats(std::string name, const unsigned short& health, const unsigned short& defense, const unsigned short& damage, const unsigned short& speed, bool bDisplayName, bool bInLine);
+
     // Logs information about a combat round to the console.
     static void LogCombatRoundInfo(Combatant& combatantA, Combatant& combatantB, unsigned short round, bool bClear = true);
 
