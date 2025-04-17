@@ -22,6 +22,7 @@
     <ClCompile Include="Source\Program.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Source\Core\CORE.md" />
     <Content Include="Source\Entity\ENTITY.md" />
     <Content Include="Source\UI\UI.md" />
   </ItemGroup>
