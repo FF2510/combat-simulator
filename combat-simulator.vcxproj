@@ -29,8 +29,12 @@
     <Content Include="Source\UI\UI.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Entity\Base\Interface\ICombat.h" />
     <ClInclude Include="Source\UI\Creator\Creator.h" />
     <ClInclude Include="Source\UI\Log\Logger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\Entity\Data\" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
