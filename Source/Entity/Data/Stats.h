@@ -7,7 +7,7 @@
 * such as health, defense, damage, and speed. These attributes influence an entity’s
 * performance during combat and are used for calculating damage, defense, and turn order.
 */
-struct Stats
+struct Stats final
 {
     // Constructs a new Stats object with specified combat attributes.
     Stats(const unsigned short health, const unsigned short damage, const unsigned short defense, const unsigned short speed)
